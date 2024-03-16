@@ -10,8 +10,8 @@ import java.util.List;
 @Component
 public class EmployeeRepository {
 
+    List<Employee> employeeList = new ArrayList<>();
     public List<Employee> fetchEmployees() {
-        List<Employee> employeeList = new ArrayList<>();
         List<Integer> contactList = Arrays.asList(1234567890, 12321213);
         employeeList.add(new Employee(1, "Akash", "Singh", contactList, 27, "Male", "Asf Insignia", true, 1000));
         employeeList.add(new Employee(2, "Bikash", "Singh", contactList, 28, "Male", "Asf Insignia", true, 2000));
@@ -25,5 +25,9 @@ public class EmployeeRepository {
         employeeList.add(new Employee(10, "Aashish", "Anand", contactList, 26, "Male", "Shahdara Delhi", true, 9000));
         employeeList.add(new Employee(11, "Prachi", "Rana", contactList, 27, "Male", "IGNOU", true, 10000));
         return employeeList;
+    }
+
+    public void addEmployee(Employee employee){
+        employeeList.add(employee);
     }
 }
