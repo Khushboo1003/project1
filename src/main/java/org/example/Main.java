@@ -1,16 +1,21 @@
 package org.example;
 
-import org.example.java8Examples.Animal;
-import org.example.java8Examples.Cat;
-import org.example.java8Examples.Dog;
+import org.example.Animals.Animal;
+import org.example.Animals.Cat;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.util.*;
-import java.util.stream.Collectors;
 
+@SpringBootApplication
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+
+        //adding springboot code changes
+        SpringApplication.run(Main.class, args);
+
         //How to take user input?
         Scanner in = new Scanner(System.in);
         System.out.println("Hello! Who is this?");
