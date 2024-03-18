@@ -1,0 +1,12 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info, metrics, beans, prometheus, env, heapdump, threaddump, configprops, mappings, loggers
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/testdb
+    username :
+    password :
+    driver-class-name : com.mysql.cj.jdbc.Driver
